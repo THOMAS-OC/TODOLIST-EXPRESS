@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist express</title>
+</head>
+<body>
+
+    <h1>Todo List</h1>
+
+    <form  method="POST" action="/task">
+        <label for="tâche">Tâche : </label>
+        <input required placeholder="Nouvelle tâche" type="text" name="task" id="tâche">
+        <input type="submit" value="Enregistrer">
+    </form>
+
+    <ul>
+        
+        
+
+            <% for( let index = 0; index < tasks.length; index++ ) { %>
+            
+                <% if (tasks[index].statut) { %>
+                    <li> <%= tasks[index].title %> | <strong> Terminé <%= index %>  </strong> | <a href="/task/del/<%= index %>">Supprimer</a> </li>
+                <% } else { %>
+                    <li> <%= tasks[index].title %> | <strong> En cours <%= index %> </strong> | <a href="/task/update/<%= index %>">Terminer</a> </li>
+                <% } %>
+
+            <% } %>
+
+
+
+    </ul>
+
+</body>
+
+<script>
+    
+</script>
+
+</html>

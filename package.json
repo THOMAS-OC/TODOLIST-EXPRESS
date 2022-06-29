@@ -1,0 +1,26 @@
+{
+  "name": "todolist-express",
+  "version": "1.0.0",
+  "description": "Projet de to do list",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THOMAS-OC/TODOLIST-EXPRESS.git"
+  },
+  "author": "Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THOMAS-OC/TODOLIST-EXPRESS/issues"
+  },
+  "homepage": "https://github.com/THOMAS-OC/TODOLIST-EXPRESS#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "nodemon": "^2.0.18"
+  }
+}
